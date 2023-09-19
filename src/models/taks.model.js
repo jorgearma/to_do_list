@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+//buscar como hacer un cronjob para mejorar la app
 const taksschema = new mongoose.Schema({
     title: {
     type: String,
@@ -12,6 +12,11 @@ const taksschema = new mongoose.Schema({
     date:{
     type:Date,
     default: Date.now,
+},
+user:{
+    type:mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    require: true
 }    
 },{
     timestamps:true,
