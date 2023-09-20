@@ -49,6 +49,6 @@ export const deletetaksk = async(req,res) => {
     }
     res.json(takss)
 }
-
+ 
 
 
